@@ -1,33 +1,61 @@
+
 <!DOCTYPE html>
-<html lang="eng">
-    <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Website ig?</title>
-        <body>
-            <h1>404: NOT FOUND! </h1>
-            <p><b>HII!!! I'M LEV!!</b></p>
-            
-             
-          
-<style>
-    html{font-family: 'Courier New', Courier, monospace;font-size: 20px;color:blue}
-h1{font-family: 'Courier New', Courier, monospace;font-style:bold,;
- font-size: 80px;;color: rgb(27, 8, 99);text-align: center;}
- p{font-family: 'Courier New', Courier, monospace;font-style:bold,;
- font-size: 40px;;color: rgb(10, 14, 50);text-align: center;}
-main{display:grid;grid-template-rows:1fr;width: 900px;border:5px rgb(41, 17, 99); background-color: rgb(9, 1, 82);height: 550px;}
-body{background-image: 
-    -webkit-linear-gradient(rgb(189, 189, 207), rgb(41, 34, 69));background-repeat: no-repeat;background-position:center;background-attachment: fixed
-    ;background-size: cover; }
-.box1{display:grid;grid-template-rows:1fr;border:10px rgb(135, 137, 227); background-color: rgb(175, 178, 199);height:550px ; }
-    
-</style>
-<main>
-<div class="box 1">BEEP boop beep</div>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404!</title>
+  <h1><b>404: WEBSITE NOT FOUND!</b></h1>
+  <p><b>HELLO!! I,M LEV</b></p>
+  <style>
 
-</main>
-<footer></footer>
-        </body>
+    html,body { min-height: 100%; }
+    body {margin: 0;min-height: 100px; position: relative; overflow: hidden; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 10px;padding: 40px 20px;
+      background: linear-gradient(to bottom, #0c254f 0%, #041939 50%, #041739 100%);
+      font-family:'Courier New', Courier, monospace;}
 
+      h1{color: #05001d;font-size: 60px;}
+
+    /*bubbles!!*/
+    .circle { position: absolute; border-radius: 50%;pointer-events: none;}
+
+    .circle-1 {width: 420px; height: 420px; top: -120px; left: -100px; background: rgba(255, 255, 255, 0.106);}
+
+    .circle-2 { width: 300px; height: 300px; top: 25%; right: -80px;background: rgba(255, 255, 255, 0.072);
+      border: 1px solid rgba(255, 255, 255, 0.10); }
+
+    .circle-3 {width: 360px; height: 360px;bottom: -100px; left: 33%;background: rgba(255, 255, 255, 0.05);}
+
+    textarea { position: relative; width: 100%; resize: none; padding: 20px;border: 1px solid #E7E2DB;border-radius: 22px;
+      background: rgba(236, 239, 255, 0.85);
+      color: #020239;
+      font-family: 'Courier New', Courier, monospace;font-size: 20px; line-height: 1.7;
+      outline: none; transition:border-color 0.3s, background 0.3s, box-shadow 0.3s;
+      box-shadow:0 1px 2px rgba(31, 29, 26, 0.04), 0 22px 44px -24px rgba(31, 29, 26, 0.20);}
+
+    textarea:focus {border-color: #D8D2C9;background: #FFFFFF;  box-shadow: 0 1px 2px rgba(31, 29, 26, 0.05),0 30px 56px -26px rgba(31, 29, 26, 0.26),
+     0 0 0 4px rgba(31, 29, 26, 0.04);}
+
+    .box1  {max-width: 672px; height: 26px; min-height: 130px;}
+    .box2 {max-width: 576px; height: 14px; min-height: 84px; } 
+    .box3  { max-width: 384px; height: 20px; min-height: 110px;}
+
+    @media (min-width: 640px) { textarea { padding: 28px; }}
+
+  </style>
+</head>
+<body>
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+  <div class="circle circle-3"></div>
+
+
+  <textarea class="box1" aria-label=" text box1" spellcheck="false"></textarea>
+
+  <textarea class="box2" aria-label=" text box2" spellcheck="false"></textarea>
+
+  <textarea class="box3" aria-label="text box3" spellcheck="false"></textarea>
+</body>
 
 </html>
